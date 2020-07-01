@@ -1,0 +1,22 @@
+.BtnInline {
+    color: #b11233;
+    border: none;
+    margin-bottom: 5px;
+    background-color: #F9F5F3;
+    padding: 5px;
+    border-radius: 10rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s; }
+.BtnInline img {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 .2rem; }
+.BtnInline span {
+    margin: 0 .4rem; }
+.BtnInline:hover {
+    color: #b11233;
+    background-color: #F2EFEE; }
+.BtnInline:focus {
+    outline: none; }

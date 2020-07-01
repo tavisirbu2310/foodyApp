@@ -1,0 +1,242 @@
+.Container {
+    max-width: 120rem;
+    margin: 4vw auto;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem 0.5rem rgba(101, 90, 86, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.Container__Main{
+    display: flex;
+}
+
+@media only screen and (max-width: 68.75em) {
+    .Container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        overflow:scroll;
+    }
+}
+
+
+.Header {
+    height: 10vh;
+    /*grid-area: head;*/
+    background-color: #F9F5F3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header__logo {
+    margin-left: 4rem;
+    height: 100%;
+    display: block;
+}
+
+.Search {
+    background-color: #fff;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all .3s;
+    width: 40%;
+    height: 50%;
+}
+
+.Search:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08);
+}
+
+.Search__field {
+    border: none;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.Search__field:focus {
+    outline: none;
+}
+
+.Search__field::placeholder {
+    color: #DAD0CC;
+}
+
+.Likes {
+    position: relative;
+    align-self: stretch;
+    padding: 0 !important;
+}
+
+
+.Likes__field {
+    cursor: pointer;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all .3s;
+}
+
+
+.Likes__field:hover {
+    background-color: #F2EFEE;
+}
+
+.Likes__panel:hover,
+.Likes__field:hover + .Likes__panel {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Likes__icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.Likes__panel {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    z-index: 10;
+    padding: 2rem 0;
+    width: 34rem;
+    background-color: #fff;
+    box-shadow: 0 0.8rem 5rem 2rem rgba(101, 90, 86, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.Likes__list {
+    list-style: none;
+}
+.Likes__list .PlaceHolder{
+    color:#b11233;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700 ;
+}
+
+.Btn {
+    background-image: linear-gradient(to right bottom, #cd7983, #9f142e);
+    border-radius: 10rem;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+    height: 100%;
+}
+
+.Btn:hover {
+    transform: scale(1.05);
+}
+
+.Btn:focus {
+    outline: none;
+}
+
+.Btn > *:first-child {
+    width: 50px;
+    padding: 20px;
+    box-sizing: border-box
+}
+
+.Btn > *:last-child {
+    margin-right: 1rem;
+    font-size: 10px;
+}
+
+.Heading_2 {
+    font-weight: 600;
+    color: #b11233;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.Results, .Shopping, .Recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Shopping {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    overflow: scroll;}
+
+.Results, .Shopping {
+    width: 25vw;
+}
+
+.Recipe {
+    background-color: #F9F5F3;
+    width: 50%;
+    height: 100%;
+}
+
+.Results__List {
+    list-style: none;
+    overflow: scroll;
+}
+
+.Results__pages {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 0 3rem;
+}
+
+@media only screen and (max-width: 42em) {
+    .Container__Main {
+        flex-wrap: wrap;
+    }
+    .Results{
+        width: 35%;
+        height: 100vh;
+    }
+    .Recipe{
+        width: 65%;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .Shopping{
+        width: 100vh;
+    }
+    .Shopping ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Search{
+        width: 80%;
+    }
+    .Search__field{
+        font-size: 1.5rem;
+    }
+    .Header__logo{
+        margin-left:1rem;
+        height: 65%;
+    }
+}
+
+
+
