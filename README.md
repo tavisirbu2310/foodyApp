@@ -1,3 +1,6 @@
+The code from this app is not entirely mine so I cannot take credit for it. I built the whole app during a course I followed, initially built in vanilla JS with the teacher. Then I changed it to use React and Hooks. I can assure that I fully understand all the logic of the app, even if it not fully mine.
+
+
 This app was built using React and React Hooks for functional components. The styling was done with CSS modules.
 
 The user can enter a food name in the search bar and this will return a list of recipes based on the searched word or nothing if the word the user is looking for is not in the database.
